@@ -15,4 +15,5 @@ app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
-server.listen();
+server.listen(process.env.PORT || 8080);
+
