@@ -1,11 +1,12 @@
 #chat_window, #chat_form {
-    width: 400px;
+    width: 350px;
+    max-width: 95%;
 }
 
 #chat_window, #chat_input {
     background: lightyellow;
     padding: 3px;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 10px;
 }
 
@@ -27,6 +28,7 @@
 
 body {
     margin-left: 10px;
+    background: lightblue;
 }
 
 input:focus,
