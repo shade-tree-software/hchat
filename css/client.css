@@ -3,11 +3,13 @@
 }
 
 #chat_window, #chat_input {
+    background: lightyellow;
+    padding: 3px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 #chat_window {
-    padding: 1px;
     min-height: 50px;
     list-style-type: none;
 }
@@ -18,10 +20,18 @@
 }
 
 #chat_submit {
+    border-radius: 10px;
     margin-top: 10px;
     float: right;
 }
 
 body {
     margin-left: 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
