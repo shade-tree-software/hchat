@@ -1,16 +1,18 @@
-#chat_window {
-    border: 1px solid black;
-    padding: 1px;
+#chat_window, #chat_form {
     width: 400px;
-    min-height: 50px;
 }
 
-#chat_form {
-    width: 400px;
+#chat_window, #chat_input {
+    border: 1px solid black;
+}
+
+#chat_window {
+    padding: 1px;
+    min-height: 50px;
+    list-style-type: none;
 }
 
 #chat_input {
-    border: 1px solid black;
     display: block;
     width: 100%;
 }
