@@ -1,0 +1,25 @@
+#chat_window {
+    border: 1px solid black;
+    padding: 1px;
+    width: 400px;
+    min-height: 50px;
+}
+
+#chat_form {
+    width: 400px;
+}
+
+#chat_input {
+    border: 1px solid black;
+    display: block;
+    width: 100%;
+}
+
+#chat_submit {
+    margin-top: 10px;
+    float: right;
+}
+
+body {
+    margin-left: 10px;
+}

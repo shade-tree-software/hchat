@@ -18,5 +18,9 @@ app.get('/js/:filename', function(req, res) {
   res.sendFile(__dirname + '/js/' + req.params.filename);
 });
 
+app.get('/css/:filename', function(req, res) {
+  res.sendFile(__dirname + '/css/' + req.params.filename);
+});
+
 server.listen(process.env.PORT || 8080);
 
