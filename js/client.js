@@ -1,5 +1,4 @@
 $(function () {
-  console.log('connecting');
   var server = io.connect(window.location.href);
   server.on('connect', function(data){
     server.emit('nickname', prompt('Enter a nickname to identify you in the chat room'));

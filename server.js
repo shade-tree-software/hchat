@@ -9,13 +9,15 @@ var sendBroadcast = function(client, broadcast_message){
 };
 
 io.on('connection', function(client){
-  console.log('Client connected...');
   client.on('nickname', function(nickname){
     client.nickname = nickname;
     sendBroadcast(client, client.nickname + " has joined the room");
   });
   client.on('message', function(message){
     sendBroadcast(client, client.nickname + ": " + message);
+  });
+  client.on('disconnect', function(){
+    client.broadcast.emit('broadcast_message', client.nickname + " has left the room");
   });
 });
 
